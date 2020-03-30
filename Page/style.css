@@ -1,0 +1,158 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primaryBlue: hsl(223, 87%, 63%);
+    --secondaryPaleBlue: hsl(223, 100%, 88%);
+    --secondaryLightRed: hsl(354, 100%, 66%);
+    --neutralGray: hsl(0, 0%, 59%);
+    --neutralVeryDarkBlue: hsl(209, 33%, 12%)
+
+}
+
+body {
+    margin: 40px auto 0px auto;
+    color: var(--neutralGray);
+    text-align: center;
+    Font-size: 20px;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+.logo{
+    margin: 10px;
+    padding: 10px 5px 15px 5px;
+    width: 110px;
+    height: auto;
+}
+
+h1 {
+    color: var(--neutralGray);
+    font-weight: 400;
+    letter-spacing: .8px;
+    font-size: 2.2em;
+}
+
+.soon{
+    color: var(--neutralVeryDarkBlue);
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+
+h3{
+    color: var(--neutralVeryDarkBlue);
+    font-weight: 400;
+    padding: 10px;
+    font-size: 1em;
+}
+
+form{
+    /* border: 2px solid olive; */
+    padding-top: 20px;
+    padding-bottom: 50px;
+    position: relative;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+input, button{
+    padding: 16px;
+    border-radius: 50px;
+    border: 1px solid var(--secondaryPaleBlue);
+    width: 400px;
+    font-size: .7em;
+    color: var(--neutralGray);
+}
+.feedback {
+    color: crimson;
+    font-size: 14px;
+    display: block;
+    margin: 10px;
+    padding-right: 300px;
+}
+
+button {
+    width: 180px;
+    letter-spacing: 1px;
+    color: #fff;
+    background: var(--primaryBlue);
+    cursor: pointer;
+    border: none;
+    margin-left: 10px;
+    box-shadow: 3px 3px 3px var(--neutralGray);
+    outline: none;
+}
+
+input:focus{
+    outline: none;
+}
+
+.svg{
+    max-width: 100%;
+    height: auto;
+}
+
+footer{
+    
+    margin-top: 80px;
+}
+
+i.fab {
+    border:1px solid var(--neutralGray);
+    width: 40px;
+    color: var(--primaryBlue);
+    height: 40px;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 5px;
+}  
+
+i.fab:hover{
+    color: #fff;
+    background-color: var(--primaryBlue);
+    cursor: pointer;
+}
+
+.copy{
+    padding: 10px ;
+    margin: 15px;
+    font-size: 14px;
+}
+
+.attribution { 
+    font-size: 14px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+
+/* mobile view */
+@media  screen and (max-width:660px){
+    
+    input,button {
+        width: 80%;
+        height: auto;
+        padding: 15px;
+        margin: 15px;
+        margin-bottom: 20px;
+    }
+    header{
+        font-size: 12px;
+    }
+    .feedback {
+        position: absolute;
+        top: 70px;
+        left: 150px;
+        font-weight: 400;
+        color: crimson;
+        font-size: 14px;
+        display: block;
+        padding: 10px 0;
+    }
+}
+
